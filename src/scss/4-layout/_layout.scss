@@ -1,0 +1,58 @@
+.container {
+  max-width: 30em;
+  margin: auto;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form  
+ --------------------*/
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  @include apply-theme-color("background", "color-list-bg");
+  @include apply-theme-color("box-shadow", "shadow");
+  input {
+    @include apply-theme-color("color", "color-input");
+    &:focus {
+      @include apply-theme-color("color", "color-input");
+    }
+    &::placeholder {
+      @include apply-theme-color("color", "color-input-placeholder");
+    }
+  }
+}
+
+input {
+  font-size: 18px;
+  letter-spacing: -0.25px;
+  background-color: transparent;
+  border-color: transparent;
+  width: 100%;
+  position: relative;
+  &::placeholder {
+    color: #9495a5;
+  }
+}
+
+input:focus {
+  outline: pink;
+}
+
+.input-check {
+  outline: none;
+  display: inline-block;
+  border-radius: 50%;
+  height: 1.1rem;
+  aspect-ratio: 1;
+  background: transparent;
+  @include apply-theme-color("border", "border");
+}

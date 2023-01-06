@@ -1,0 +1,26 @@
+.App {
+  height: 100vh;
+  @include apply-theme-color("background-color", "color-bg");
+}
+.main-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  @include backgroundImg;
+}
+
+.title-section {
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: #fff;
+  }
+  button.theme-switch {
+    background: none;
+    outline: none;
+    border: none;
+  }
+}
