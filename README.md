@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Todo App! This app has been built with React and TypeScript, and is designed to help you keep track of all the tasks you need to complete in a simple and intuitive way.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Theme switcher: You can switch between light and dark themes to suit your preference.
+- Filters: You can filter your tasks by priority or status (e.g. completed, not completed).
+- Responsive design: The app is designed to be responsive and work well on both desktop and mobile devices.
 
-### `npm start`
+## How to use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Add a task: To add a new task, simply type the task into the "Add a new task" field and press enter.
+2. Mark a task as completed: To mark a task as completed, click on the checkbox next to the task.
+3. Filter tasks: You can use the filters at the top of the page to view only certain tasks (e.g. only high priority tasks).
+4. Switch theme: You can switch between the light and dark themes by clicking on the "Theme" button in the top right corner of the page.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development
 
-### `npm test`
+To run the app locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: `git clone https://github.com/[your-username]/todo-app.git`
+2. Navigate to the project directory: `cd todo-app`
+3. Install dependencies: `yarn install` or `npm install`
+4. Start the development server: `yarn start` or `npm start`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+We hope you enjoy using the Todo App! If you have any feedback or suggestions for improvement, please don't hesitate to reach out.
