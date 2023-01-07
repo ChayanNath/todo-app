@@ -1,7 +1,3 @@
-.App {
-  height: 100vh;
-  @include apply-theme-color("background-color", "color-bg");
-}
 .main-section {
   background-repeat: no-repeat;
   background-size: cover;
