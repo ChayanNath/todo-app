@@ -19,9 +19,9 @@ Welcome to the Todo App! This app has been built with React and TypeScript, and 
 
 To run the app locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/[your-username]/todo-app.git`
+1. Clone the repository: `git clone https://github.com/chayannath/todo-app.git`
 2. Navigate to the project directory: `cd todo-app`
 3. Install dependencies: `yarn install` or `npm install`
 4. Start the development server: `yarn start` or `npm start`
 
-We hope you enjoy using the Todo App! If you have any feedback or suggestions for improvement, please don't hesitate to reach out.
+I hope you enjoy using the Todo App! If you have any feedback or suggestions for improvement, please don't hesitate to reach out.
