@@ -1,0 +1,82 @@
+.todo-item {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 18px;
+  letter-spacing: -0.25px;
+  @include apply-theme-color("color", "color-list-text");
+  @include apply-theme-color("border-bottom", "border");
+  &.completed {
+    @include apply-theme-color("color", "color-list-text-completed");
+    text-decoration: line-through;
+  }
+  &:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .item-check-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .item-check {
+    display: inline-block;
+    border-radius: 50%;
+    height: 1.1rem;
+    aspect-ratio: 1;
+    background: transparent;
+    &.completed {
+      background: url("../../assets/images/icon-check.svg"),
+        linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &:not(:hover) {
+    .item-check:not(.completed) {
+      @include apply-theme-color("border", "border");
+    }
+  }
+  &:hover,
+  &:focus {
+    .delete-icon {
+      opacity: 1;
+    }
+    .item-check:not(.completed) {
+      background: linear-gradient(
+        135deg,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+    }
+  }
+}
+
+.delete-icon {
+  @include mobile {
+    background: transparent;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.delete-icon {
+  @include tablet {
+    transition: opacity 0.5s ease-in-out;
+    background: transparent;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+    & > path {
+      @include apply-theme-color("fill", "color-path");
+    }
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

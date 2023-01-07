@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LandingPage from "./components/LandingPage";
+import TodoProvider from "./context/todo/TodoProvider";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState<string>("dark");
@@ -8,9 +9,11 @@ function App() {
     setCurrentTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
   return (
-    <div className="App">
-      <LandingPage theme={currentTheme} toggleTheme={toggleThemeHandler} />
-    </div>
+    <TodoProvider>
+      <div className="App">
+        <LandingPage theme={currentTheme} toggleTheme={toggleThemeHandler} />
+      </div>
+    </TodoProvider>
   );
 }
 

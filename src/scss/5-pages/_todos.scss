@@ -1,0 +1,52 @@
+/* List styles */
+.todos-container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include apply-theme-color("background", "color-list-bg");
+  @include apply-theme-color("box-shadow", "shadow");
+}
+
+.list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  .items-left {
+    display: block;
+    @include apply-theme-color("color", "color-btn");
+    font-size: 14px;
+    letter-spacing: -0.25px;
+  }
+  .filter-wrapper {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.todo-list-footer > * {
+  flex: 1;
+}
+
+.btn-clear {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  @include apply-theme-color("color", "color-btn");
+  &:focus {
+    border: none;
+  }
+  &:hover {
+    @include apply-theme-color("color", "color-btn-hover");
+  }
+}

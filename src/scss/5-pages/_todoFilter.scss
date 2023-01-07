@@ -1,0 +1,38 @@
+/* FILTER
+--------------------*/
+.filter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  .filter-option {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    @include apply-theme-color("color", "color-text-light");
+    &:focus {
+      border: none;
+    }
+    &:hover {
+      @include apply-theme-color("color", "color-btn-hover");
+    }
+    &.active {
+      color: #3a7cfd;
+    }
+  }
+  @include mobile {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.75rem;
+    justify-content: center;
+    @include apply-theme-color("background", "color-list-bg");
+    @include apply-theme-color("box-shadow", "shadow");
+  }
+}
+
+.filter-mobile {
+  @include tablet {
+    display: none;
+  }
+}
